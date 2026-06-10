@@ -94,11 +94,6 @@ main,
   gap: 12px;
 }
 
-.brand__logo {
-  border-radius: 12px;
-  box-shadow: 0 0 24px rgba(99, 102, 241, 0.35);
-}
-
 .brand__name {
   display: flex;
   flex-direction: column;
@@ -164,8 +159,6 @@ main,
 
 .hero__logo {
   margin: 0 auto 24px;
-  border-radius: 28px;
-  box-shadow: var(--shadow), 0 0 48px rgba(99, 102, 241, 0.25);
 }
 
 .hero__title {
@@ -235,7 +228,16 @@ main,
   cursor: not-allowed;
 }
 
-.download-btn img {
+.download-btn--app-store,
+.download-btn--google-play {
+  min-width: 156px;
+  padding: 6px 10px;
+  justify-content: center;
+}
+
+.download-btn--app-store img,
+.download-btn--google-play img {
+  display: block;
   height: 40px;
   width: auto;
 }

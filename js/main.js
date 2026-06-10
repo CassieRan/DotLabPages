@@ -114,13 +114,13 @@
       {
         id: "app_store",
         availableKey: "app_store_available",
-        badge: "https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83",
+        badge: "site-content/downloads/appstore_badge.svg",
         alt: "Download on the App Store"
       },
       {
         id: "google_play",
         availableKey: "google_play_available",
-        badge: "https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png",
+        badge: "site-content/downloads/google_play_badge.svg",
         alt: "Get it on Google Play"
       },
       {
@@ -139,7 +139,7 @@
         el = document.createElement(available ? "a" : "span");
         el.className = "download-btn download-btn--apkpure" + (available ? "" : " is-disabled");
         el.innerHTML =
-          "<span><small>Download on</small>APKPure</span>";
+          "<span><small>（Android）</small>APKPure</span>";
         if (available) {
           el.href = url;
           el.target = "_blank";
@@ -149,7 +149,7 @@
         }
       } else {
         el = document.createElement(available ? "a" : "span");
-        el.className = "download-btn" + (available ? "" : " is-disabled");
+        el.className = "download-btn download-btn--" + store.id.replace(/_/g, "-") + (available ? "" : " is-disabled");
         el.innerHTML = '<img src="' + store.badge + '" alt="' + store.alt + '">';
         if (available) {
           el.href = url;
