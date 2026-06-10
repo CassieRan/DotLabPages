@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.fafa.dotLab",
+      "sha256_cert_fingerprints": [
+        "90:1F:A5:41:18:3C:A8:36:E4:0B:63:47:53:CB:75:9D:57:FC:DC:4D:C4:35:43:0A:A1:07:73:51:B1:A6:A3:6B"
+      ]
+    }
+  }
+]
